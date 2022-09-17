@@ -61,9 +61,9 @@ from flet import icons, dropdown, colors
 
 ```python
 textfield = TextField (
-    value = "I am a multiline\ntextfield!",
-    min_lines = 10,
-    max_lines = 10,
+    value = "Look at me!\n\nI am a multiline Textfield!",
+    min_lines = 3,
+    max_lines = 3,
     multiline = True,
     border_width= 2,
     color = "white",
@@ -71,6 +71,6 @@ textfield = TextField (
 )
 page.add (textfield)
 ```
-
+![multiline-textfield](https://user-images.githubusercontent.com/11970940/190867558-2fdfef39-0bd8-4354-a116-42e85eb9691e.png)
 
 
