@@ -1,10 +1,17 @@
 # Flet Cheatsheet
-Flet code snippets to boost productivity
+## Flet code snippets to boost productivity
 
-Flet boilerplate  - Essential Imports
+**Install Flet via pip**
+
+```
+pip3 install flet
+```
+
+
+**Flet boilerplate Startup - Essential Imports**
 
 ```python
-# name: Flet Boilerplate 1
+# name: Flet Boilerplate startup
 
 import flet
 from flet import Page, Text, Column, Row, alignment, colors
@@ -17,3 +24,16 @@ def main(page: Page):
 
 flet.app(target=main, assets_dir="assets")
 ```
+
+**Import \***
+
+```python
+# name: Import kitchen sink
+
+import flet
+from flet import *
+from flet import icons, dropdown, colors
+```
+
+
+
