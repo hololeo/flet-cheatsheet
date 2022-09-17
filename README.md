@@ -13,16 +13,11 @@ pip3 install flet --upgrade
 
 **Essential links**
 
-
-[Getting started guide](https://flet.dev/docs/guides/python/getting-started)
-
-[Controls Reference](https://flet.dev/docs/controls)
-
-[Flet Github Repo](https://github.com/flet-dev/flet)
-
-[Flet issues](https://github.com/flet-dev/flet/issues)
-
-[Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python)
+|    |   |
+| ------------- | ------------- |
+| [Getting started guide](https://flet.dev/docs/guides/python/getting-started)  | [Controls Reference](https://flet.dev/docs/controls)  |
+| [Flet Github Repo](https://github.com/flet-dev/flet) | [Flet issues](https://github.com/flet-dev/flet/issues) |
+| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) |  |
 
 **Flet boilerplate Startup - Essential Imports**
 
