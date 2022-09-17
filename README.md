@@ -17,6 +17,16 @@ pip3 install flet
 pip3 install flet --upgrade
 ```
 
+**Hot reload**
+```
+# watch all files in directory
+
+flet main.py -d
+
+# watch current and sub-directories
+
+flet main.py -r
+```
 
 
 **Flet boilerplate Startup - Essential Imports**
@@ -34,6 +44,7 @@ def main(page: Page):
   page.update()
 
 flet.app(target=main, assets_dir="assets")
+# flet.app(target=main, view=flet.WEB_BROWSER)
 ```
 
 **Import \***
