@@ -83,7 +83,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 **Memes**
 
-![i-flet-therefore-i-can](https://user-images.githubusercontent.com/11970940/190875624-9cb08001-309a-4839-a3d7-ccf2716c0b53.png)
+![i-flet-therefore-i-can](https://user-images.githubusercontent.com/11970940/190875624-9cb08001-309a-4839-a3d7-ccf2716c0b53.png | width=400)
 
 ![what-good-shall-flet-today](https://user-images.githubusercontent.com/11970940/190875488-27a18f9b-19e3-4cc9-ba5c-5cdbeb7ad2c7.png)
 
