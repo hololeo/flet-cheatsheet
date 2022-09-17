@@ -80,5 +80,7 @@ page.add (textfield)
 import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
+![logging](https://user-images.githubusercontent.com/11970940/190874810-a2de3efd-9d58-4db7-bea9-785ec85f448e.png)
+
 
 
