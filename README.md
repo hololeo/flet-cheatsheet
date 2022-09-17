@@ -1,4 +1,4 @@
-# flet-cheatsheet
+# Flet Cheatsheet
 Flet code snippets to boost productivity
 
 Flet boilerplate  - Essential Imports
