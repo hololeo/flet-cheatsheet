@@ -17,6 +17,16 @@ pip3 install flet
 pip3 install flet --upgrade
 ```
 
+**Hot reload**
+```
+# watch all files in directory
+
+flet main.py -d
+
+# watch current and sub-directories
+
+flet main.py -r
+```
 
 
 **Flet boilerplate Startup - Essential Imports**
@@ -46,6 +56,23 @@ import flet
 from flet import *
 from flet import icons, dropdown, colors
 ```
+
+**Multiline Textfield**
+
+```python
+textfield = TextField (
+    value = "Look at me!\n\nI am a multiline Textfield!",
+    min_lines = 3,
+    max_lines = 3,
+    multiline = True,
+    border_width= 2,
+    color = "white",
+    text_size = 15     
+)
+page.add (textfield)
+```
+![multiline-textfield](https://user-images.githubusercontent.com/11970940/190867558-2fdfef39-0bd8-4354-a116-42e85eb9691e.png)
+
 
 **Logging**
 
