@@ -5,7 +5,7 @@
 | ------------- | ------------- |
 | [Getting started guide](https://flet.dev/docs/guides/python/getting-started)  | [Controls Reference](https://flet.dev/docs/controls)  |
 | [Flet Github Repo](https://github.com/flet-dev/flet) | [Flet issues](https://github.com/flet-dev/flet/issues) |
-| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) |  |
+| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | [Youtube Flet Videos](https://www.youtube.com/results?search_query=flet+python) |
 
 
 **Install Flet via pip**
@@ -81,6 +81,55 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
+**App Window**
+
+```python
+# title
+page.window_title = "Flet Rocks!" # set app window title (desktop and web)
+
+# window position on desktop
+page.window_top = 0
+page.window_left = 0
+
+# window size
+page.window_width = 500 
+page.window_height = 500   
+
+# locking in place and always on top
+page.window_always_on_top = True 
+page.window_movable = True 
+
+# window min and max resize  
+page.window_resizable = True # False prevents resizing
+page.window_min_width = 200  # resizing window limit
+page.window_min_height = 200     
+page.window_max_width = 500  # resizing window max
+page.window_max_height = 500
+
+# minimize or maximize window  
+page.window_minimized = False # True = minimizes, False = restores
+page.window_maximized = True # False = unmaximize
+
+# customize window chrome
+page.window_frameless = True
+page.window_opacity = 0.5 # 0.0 (fully transparent) 1.0 (fully opaque)
+page.window_title_bar_hidden = True # see also WindowDragArea
+page.window_title_bar_buttons_hidden = True # macOS only 
+page.window_minimizable = True # show or hide minimize button
+
+# showing / hiding window
+page.window_visible = True # True = show app window. False = hide
+flet.app(target=main, view=flet.FLET_APP_HIDDEN) # start app hidden
+
+# misc
+page.window_full_screen = True # switch to fullscreen mode
+page.window_focused = True
+page.window_title_bar_hidden = True
+page.window_skip_task_bar = True # hide app from the Task Bar / Dock
+page.window_progress_bar = 0.5 # show half a proress bar on Task Bar / Dock
+page.window_prevent_close = True # intercept native close signal 
+```
+
 **Memes**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875624-9cb08001-309a-4839-a3d7-ccf2716c0b53.png" width=400 align=left/>
@@ -91,7 +140,7 @@ logging.basicConfig(level=logging.DEBUG)
 <br><br>
 
 
-**Sponsors**
+**Credits**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
 <br>
