@@ -50,7 +50,7 @@ flet.app(target=main, assets_dir="assets")
 **Import \***
 
 ```python
-# name: Import kitchen sink
+# name: Import kitchen sink, 'bad practice'
 
 import flet
 from flet import *
@@ -80,7 +80,7 @@ def main (page:Page):
     page.add (btn)
 flet.app (target=main)
 ```
-![sd](https://user-images.githubusercontent.com/11970940/190915725-823a25c9-1dbb-4c13-b0f6-94fc91448e1a.png)
+
 
 **Multiline Textfield**
 
