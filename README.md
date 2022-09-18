@@ -5,7 +5,7 @@
 | ------------- | ------------- |
 | [Getting started guide](https://flet.dev/docs/guides/python/getting-started)  | [Controls Reference](https://flet.dev/docs/controls)  |
 | [Flet Github Repo](https://github.com/flet-dev/flet) | [Flet issues](https://github.com/flet-dev/flet/issues) |
-| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | [Youtube Flet Videos](https://www.youtube.com/results?search_query=flet+python) |
+| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | |
 
 
 **Install Flet via pip**
@@ -140,7 +140,7 @@ page.window_prevent_close = True # intercept native close signal
 <br><br>
 
 
-**Sponsors**
+**Credits**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
 <br>
