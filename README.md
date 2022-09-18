@@ -29,14 +29,15 @@ flet main.py -r
 ```
 
 
-**Flet boilerplate Startup - Essential Imports**
+**Quick Boilerplate - Essential Imports**
 
 ```python
-# name: Flet Boilerplate startup
+# Essential imports
 
 import flet
-from flet import Page, Text, Column, Row, alignment, colors
-from flet import ElevatedButton, Container, Image
+from flet import Page, Text, Column, Row
+from flet import Container, ElevatedButton, Image
+from flet import icons, dropdown, colors, padding, alignment
 
 def main(page: Page):
   page.title = "My Awesome Flet Appname"
@@ -47,14 +48,14 @@ flet.app(target=main, assets_dir="assets")
 # flet.app(target=main, view=flet.WEB_BROWSER)
 ```
 
-**Import \***
+**Deep work mode: Import \***
 
-```python
-# name: Import kitchen sink, 'bad practice' https://www.geeksforgeeks.org/why-import-star-in-python-is-a-bad-idea/
+```python 
+# 'bad practice' https://www.geeksforgeeks.org/why-import-star-in-python-is-a-bad-idea/
 
 import flet
 from flet import *
-from flet import icons, dropdown, colors
+from flet import icons, dropdown, colors, padding, alignment
 ```
 
 **Buttons**
@@ -117,7 +118,7 @@ def main (page:Page):
     def on_keyboard (e: KeyboardEvent):
         keypressed = f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
         print (keypressed)
-        
+
     page.on_keyboard_event = on_keyboard
     page.update()
 flet.app (target=main)
