@@ -110,13 +110,17 @@ logging.basicConfig(level=logging.DEBUG)
 
 ```python
 # https://flet.dev/docs/guides/python/keyboard-shortcuts
+import flet
 from flet import Page, KeyboardEvent
 
-def on_keyboard (e: KeyboardEvent):
-    keypressed = f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
-    print (keypressed)
-)    
-page.on_keyboard_event = on_keyboard
+def main (page:Page):
+    def on_keyboard (e: KeyboardEvent):
+        keypressed = f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
+        print (keypressed)
+        
+    page.on_keyboard_event = on_keyboard
+    page.update()
+flet.app (target=main)
 ```
 
 
