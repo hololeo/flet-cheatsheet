@@ -182,8 +182,11 @@ page.window_prevent_close = True # intercept native close signal
 <br><br>
 <img src="https://user-images.githubusercontent.com/11970940/190875493-50f3f94a-5642-4cd7-9f45-56525d24419d.jpeg" width=400 align=left/>
 <br><br>
-<img src="https://user-images.githubusercontent.com/11970940/190927577-907d0380-9a4c-4a4b-9553-f79080de360a.png" width=400 align=left/>
+<img src= "https://user-images.githubusercontent.com/11970940/190927669-e4237735-422b-4afb-a184-6e8350a2bc77.png" width=300 align=left/>
 <br><br>
+
+
+
 
 **Sponsors**
 
