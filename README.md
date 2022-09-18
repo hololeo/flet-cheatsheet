@@ -50,7 +50,7 @@ flet.app(target=main, assets_dir="assets")
 **Import \***
 
 ```python
-# name: Import kitchen sink, 'bad practice'
+# name: Import kitchen sink, 'bad practice' https://www.geeksforgeeks.org/why-import-star-in-python-is-a-bad-idea/
 
 import flet
 from flet import *
