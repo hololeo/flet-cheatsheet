@@ -140,7 +140,7 @@ page.window_prevent_close = True # intercept native close signal
 <br><br>
 
 
-**Credits**
+**Sponsors**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
 <br>
