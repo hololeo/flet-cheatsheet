@@ -81,6 +81,20 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
+**Keyboard**
+
+```python
+# https://flet.dev/docs/guides/python/keyboard-shortcuts
+from flet import KeyboardEvent
+
+def on_keyboard (e: KeyboardEvent):
+    keypressed = f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
+    print (keypressed)
+)    
+page.on_keyboard_event = on_keyboard
+```
+
+
 **App Window**
 
 ```python
@@ -140,7 +154,7 @@ page.window_prevent_close = True # intercept native close signal
 <br><br>
 
 
-**Credits**
+**Sponsors**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
 <br>
