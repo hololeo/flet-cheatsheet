@@ -1,5 +1,7 @@
 # Flet Cheatsheet - snippets to boost productivity
 
+If you find this cheatsheet useful, you can support it for free by clicking Star repo. 
+
 **Essential daily links**
 |    |   |
 | ------------- | ------------- |
