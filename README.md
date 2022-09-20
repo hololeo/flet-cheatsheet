@@ -19,7 +19,7 @@ pip3 install flet
 pip3 install flet --upgrade
 ```
 
-**Hot reload**  
+**Hot reload**
 ```
 # watch all files in directory
 
@@ -146,6 +146,7 @@ page.set_clipboard ("This paste comes from flet!")
 # window resize handler
 def page_on_resize(e):
     print (f"Resize {page.window_width},{page.window_height}")
+
 page.on_resize = page_on_resize
 ```
 
@@ -172,7 +173,7 @@ def win_on_event (e):
     print (f"win_event: {e.data}")
     page.add (Text (e.data))
     page.update()
-    
+
 page.on_window_event = win_on_event
 page.scroll = "auto"
 page.update()
@@ -246,11 +247,12 @@ page.window_prevent_close = True # intercept native close signal
 <img src= "https://user-images.githubusercontent.com/11970940/191278415-2c6a67da-5fd7-4231-8eb6-0952fc12268c.png" width=400 align=left/>
 <br><br>
 
-<img src= "https://user-images.githubusercontent.com/11970940/191353741-8537f6e9-2f28-45d8-bd2b-34128fd8bd3f.png" width=400 align=left/>
+<img src= "https://user-images.githubusercontent.com/11970940/191359269-4fba4ee1-5e79-473a-bb9d-1733d796af5e.png" width=400 align=left/>
 <br><br>
 
 **Sponsors**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
 <br>
+
 
