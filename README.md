@@ -37,7 +37,7 @@ flet main.py -r
 # Essential imports
 
 import flet
-from flet import Page, Column, Row, Container, Text, TextField, ElevatedButton 
+from flet import Page, Column, Row, Container, Text, Stack, TextField, Image ElevatedButton 
 from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
 
 def main(page: Page):
@@ -80,6 +80,7 @@ def main (page:Page):
         on_long_press = on_longpress_btn 
     )
     page.add (btn)
+
 flet.app (target=main)
 ```
 
@@ -122,6 +123,7 @@ def main (page:Page):
 
     page.on_keyboard_event = on_keyboard
     page.update()
+
 flet.app (target=main)
 ```
 
@@ -170,6 +172,7 @@ def win_on_event (e):
     print (f"win_event: {e.data}")
     page.add (Text (e.data))
     page.update()
+    
 page.on_window_event = win_on_event
 page.scroll = "auto"
 page.update()
