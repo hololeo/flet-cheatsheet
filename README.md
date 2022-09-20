@@ -37,9 +37,8 @@ flet main.py -r
 # Essential imports
 
 import flet
-from flet import Page, Text, Column, Row
-from flet import Container, ElevatedButton, Image
-from flet import icons, dropdown, colors, padding, alignment
+from flet import Page, Column, Row, Container, Text, TextField, ElevatedButton 
+from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
 
 def main(page: Page):
   page.title = "My Awesome Flet Appname"
@@ -126,8 +125,59 @@ def main (page:Page):
 flet.app (target=main)
 ```
 
+**Page**
 
-**App Window**
+```python
+# scroll page as items added
+page.scroll = "auto"
+page.auto_scroll  = True
+
+# open url in browser
+page.launch_url (url)
+
+# go to route 
+page.go (route)
+
+# set clipboard
+page.set_clipboard ("This paste comes from flet!")
+
+# window resize handler
+def page_on_resize(e):
+    print (f"Resize {page.window_width},{page.window_height}")
+page.on_resize = page_on_resize
+```
+
+**App Window properties**
+
+```python
+# center window
+page.window_center()
+
+# close window
+page.window_close()
+
+# window_destroy()
+page.window_destroy()
+
+# window resize handler
+def page_on_resize(e):
+    print (f"Resize {page.window_width},{page.window_height}")
+
+page.on_resize = page_on_resize
+
+# window event listener
+def win_on_event (e):
+    print (f"win_event: {e.data}")
+    page.add (Text (e.data))
+    page.update()
+page.on_window_event = win_on_event
+page.scroll = "auto"
+page.update()
+
+
+```
+
+**App Window Properties**
 
 ```python
 # title
@@ -189,9 +239,9 @@ page.window_prevent_close = True # intercept native close signal
 
 <img src= "https://user-images.githubusercontent.com/11970940/190932508-3d1a4d6d-1948-4a10-9c69-26783a6590a4.png" width=400 align=left/>
 <br><br>
+
 <img src= "https://user-images.githubusercontent.com/11970940/191278415-2c6a67da-5fd7-4231-8eb6-0952fc12268c.png" width=400 align=left/>
 <br><br>
-
 
 **Sponsors**
 
