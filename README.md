@@ -19,7 +19,7 @@ pip3 install flet
 pip3 install flet --upgrade
 ```
 
-**Hot reload**
+**Hot reload**  
 ```
 # watch all files in directory
 
