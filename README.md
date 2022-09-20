@@ -57,7 +57,7 @@ flet.app(target=main, assets_dir="assets")
 
 import flet
 from flet import *
-from flet import icons, dropdown, colors, padding, alignment
+from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
 ```
 
 **Buttons**
