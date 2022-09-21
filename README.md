@@ -150,7 +150,8 @@ def page_on_resize(e):
 page.on_resize = page_on_resize
 ```
 
-[**Layout**](#layout)
+<a id="layout"></a>
+**Layout**
 
 *padding*
 ```python
