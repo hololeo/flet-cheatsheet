@@ -9,7 +9,7 @@ If you find this cheatsheet useful, you can support it for free by clicking Star
 | [Flet Github Repo](https://github.com/flet-dev/flet) | [Flet issues](https://github.com/flet-dev/flet/issues) |
 | [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | |
 
-
+<a id="install"></a>
 **Install Flet via pip**
 ```
 pip3 install flet
@@ -19,6 +19,7 @@ pip3 install flet
 pip3 install flet --upgrade
 ```
 
+<a id="hotreload"></a>
 **Hot reload**
 ```
 # watch all files in directory
@@ -30,7 +31,7 @@ flet main.py -d
 flet main.py -r
 ```
 
-
+<a id="boilerplate"></a>
 **Quick Boilerplate - Essential Imports**
 
 ```python
@@ -58,7 +59,7 @@ import flet
 from flet import *
 from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
 ```
-
+<a id="button"></a>
 **Buttons**
 
 ```python
@@ -84,7 +85,7 @@ def main (page:Page):
 flet.app (target=main)
 ```
 
-
+<a id="textfield"></a>
 **Multiline Textfield**
 
 ```python
@@ -102,6 +103,7 @@ page.add (textfield)
 ![multiline-textfield](https://user-images.githubusercontent.com/11970940/190867558-2fdfef39-0bd8-4354-a116-42e85eb9691e.png)
 
 
+<a id="logging"></a>
 **Logging**
 
 ```python
@@ -109,6 +111,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
+<a id="keyboard"></a>
 **Keyboard**
 
 ```python
@@ -127,6 +130,7 @@ def main (page:Page):
 flet.app (target=main)
 ```
 
+<a id="page"></a>
 **Page**
 
 ```python
@@ -175,7 +179,9 @@ page.horizontal_alignment = "center"
 # expand = True will expand item to fill available space in its parent layout control
 col = Column ([Text ("Im at top", expand=True), Text ("Im at bottom")], expand=True)   
 ```
-**App Window properties**
+
+<a id="winmethods"></a>
+**App Window methods**
 
 ```python
 # center window
@@ -205,7 +211,7 @@ page.update()
 
 
 ```
-
+<a id="winprops"></a>
 **App Window Properties**
 
 ```python
@@ -255,6 +261,7 @@ page.window_progress_bar = 0.5 # show half a proress bar on Task Bar / Dock
 page.window_prevent_close = True # intercept native close signal 
 ```
 
+<a id="memes"></a>
 **Memes**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875624-9cb08001-309a-4839-a3d7-ccf2716c0b53.png" width=400 align=left/>
@@ -275,6 +282,7 @@ page.window_prevent_close = True # intercept native close signal
 <img src= "https://user-images.githubusercontent.com/11970940/191359269-4fba4ee1-5e79-473a-bb9d-1733d796af5e.png" width=400 align=left/>
 <br><br>
 
+<a id="sponsor"></a>
 **Sponsors**
 
 <img src="https://user-images.githubusercontent.com/11970940/190875540-d45afb9a-9d09-44b0-93c4-8159b28ea6df.png" width=300 align=left>
