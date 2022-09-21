@@ -1,6 +1,6 @@
 # Flet Cheatsheet - snippets to boost productivity
 
-If you find this cheatsheet useful, you can support it for free by clicking Star repo. 
+If you find this cheatsheet useful, you can support it for free by clicking ⭐ Star repo. 🙏 
 
 **Essential daily links**
 |    |   |
@@ -178,7 +178,13 @@ page.horizontal_alignment = "center"
 ```python
 # expand = True will expand item to fill available space in its parent layout control
 col = Column ([Text ("Im at top", expand=True), Text ("Im at bottom")], expand=True)   
+row = Row ([Text ("Im at left", expand=True), Text ("Im at right")], expand=True) 
 ```
+
+*Absolute position*
+
+[see: Absolute positioning inside Stack](https://flet.dev/docs/controls/stack#absolute-positioning-inside-stack)
+
 
 <a id="winmethods"></a>
 **App Window methods**
