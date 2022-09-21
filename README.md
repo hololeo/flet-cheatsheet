@@ -150,6 +150,30 @@ def page_on_resize(e):
 page.on_resize = page_on_resize
 ```
 
+[**Layout**](#layout)
+
+*padding*
+```python
+# left indent
+padding = padding.only (left=43)
+# top and left indent
+padding=padding.only (left=8, right=8),
+# no spacing between children
+control.spacing = 0
+```
+
+*page vertical/horizontal*
+```python
+# start (left), end (right), center, spaceBetween, spaceAround, spaceEvenly
+page.vertical_alignment = "center" 
+page.horizontal_alignment = "center"  
+```
+
+*expand*
+```python
+# expand = True will expand item to fill available space in its parent layout control
+col = Column ([Text ("Im at top", expand=True), Text ("Im at bottom")], expand=True)   
+```
 **App Window properties**
 
 ```python
