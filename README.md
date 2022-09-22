@@ -218,6 +218,31 @@ row = Row ([Text ("Im at left", expand=True), Text ("Im at right")], expand=True
 
 [see: Absolute positioning inside Stack](https://flet.dev/docs/controls/stack#absolute-positioning-inside-stack)
 
+**User Control**
+
+[see: User control docs](https://flet.dev/docs/guides/python/user-controls)
+
+<a id="usercontrol">
+
+```python
+import flet
+from flet import Page, Text, UserControl
+
+class HelloWorld (UserControl):
+    
+    def __init__(self, text='Hello Fletizen!'):
+        super().__init__()
+        self.text = Text(value=text)
+
+    def build(self):
+        return self.text
+
+def main(page: Page):
+    page.add (HelloWorld())
+    page.update()
+
+flet.app (target=main)        
+```
 
 <a id="winmethods"></a>
 **App Window methods**
