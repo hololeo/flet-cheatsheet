@@ -129,7 +129,7 @@ page.add (img)
 
 # cache buster
 import time
-img = Image(src=f"photo.png?ts={time.time()}")
+img = Image(src=f"https://picsum.photos/200/200?ts={time.time()}")
 page.add (img)
 
 # display Base-64 encoded image
