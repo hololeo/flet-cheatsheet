@@ -239,6 +239,7 @@ class HelloWorld (UserControl):
 
 def main(page: Page):
     page.add (HelloWorld())
+    page.add (HelloWorld("What good shall I Flet today?"))
     page.update()
 
 flet.app (target=main)        
