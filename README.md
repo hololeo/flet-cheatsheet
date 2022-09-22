@@ -1,6 +1,6 @@
 # Flet Cheatsheet - snippets to boost productivity
 
-If you find this cheatsheet useful, you can support it for free by clicking ⭐ Star repo. 🙏 
+If you find this cheatsheet useful, you can support it for free by clicking ⭐ Star repo.
 
 **Essential daily links**
 |    |   |
@@ -10,7 +10,8 @@ If you find this cheatsheet useful, you can support it for free by clicking ⭐ 
 | [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | |
 
 <a id="install"></a>
-**Install Flet via pip**
+<a id="upgrade"></a>
+**Install / Upgrade Flet via pip**
 ```
 pip3 install flet
 
@@ -102,6 +103,38 @@ page.add (textfield)
 ```
 ![multiline-textfield](https://user-images.githubusercontent.com/11970940/190867558-2fdfef39-0bd8-4354-a116-42e85eb9691e.png)
 
+<a id="image"></a>
+**Images**
+
+```python
+import flet
+from flet import Page, Image, border_radius
+
+# load local image inside assets folder
+def main(page: Page):
+    page.add (Image( src="photo.jpg"))
+flet.app( target=main, assets_dir="assets")
+
+# load remote image
+img = Image(
+    src=f"https://picsum.photos/200/200",
+    width=200,
+    height=200,
+    fit="none", # none, contain, cover, fill, fitHeight, fitWidth, scaleDown
+    repeat="noRepeat", # noRepeat, repeat, repeatX, repeatY
+    border_radius=border_radius.all(10),
+    tooltip= "text displayed on hover image"
+)
+page.add (img)
+
+# cache buster
+import time
+img = Image(src=f"photo.png?ts={time.time()}")
+page.add (img)
+
+# display Base-64 encoded image
+page.add(Image(src_base64 = "iVBORw..."))
+```
 
 <a id="logging"></a>
 **Logging**
