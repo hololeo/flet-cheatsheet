@@ -39,7 +39,7 @@ flet main.py -r
 # Essential imports
 
 import flet
-from flet import Page, Column, Row, Container, Text, Stack, TextField, Image ElevatedButton 
+from flet import Page, Column, Row, Container, Text, Stack, TextField, Image, ElevatedButton 
 from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
 
 def main(page: Page):
