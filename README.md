@@ -350,6 +350,9 @@ page.window_prevent_close = True # intercept native close signal
 <img src= "https://user-images.githubusercontent.com/11970940/191648035-3b9abb94-caf1-49da-a425-d92010afe478.png" width=400 align=left/>
 <br><br>
 
+<img src= "https://user-images.githubusercontent.com/11970940/192121180-8192181c-4231-40ac-9ac9-ab2d01bf23a8.png" width=400 align=left/>
+<br><br>
+
 <a id="sponsor"></a>
 **Sponsors**
 
