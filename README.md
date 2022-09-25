@@ -276,10 +276,6 @@ def win_on_event (e):
     page.update()
 
 page.on_window_event = win_on_event
-page.scroll = "auto"
-page.update()
-
-
 ```
 <a id="winprops"></a>
 **App Window Properties**
