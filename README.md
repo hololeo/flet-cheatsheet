@@ -288,6 +288,14 @@ page.update()
 # title
 page.window_title = "Flet Rocks!" # set app window title (desktop and web)
 
+# show window
+page.window_opacity = 1.0
+page.update()       
+
+# hide window
+page.window_opacity = 0.0
+page.update()
+
 # window position on desktop
 page.window_top = 0
 page.window_left = 0
