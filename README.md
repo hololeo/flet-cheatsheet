@@ -180,6 +180,11 @@ page.go (route)
 # set clipboard
 page.set_clipboard ("This paste comes from flet!")
 
+# runtime environment
+page.web # True/False if running in web browser
+page.platform # OS system running on ios, android, macos, linux, windows
+page.pwa # True/False if running as Progressive Web App (PWA)
+
 # window resize handler
 def page_on_resize(e):
     print (f"Resize {page.window_width},{page.window_height}")
