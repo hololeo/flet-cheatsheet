@@ -274,6 +274,8 @@ page.on_resize = page_on_resize
 #   maximize, unmaximize, minimize,  
 #   restore, resize 
 #   resized (macOS and Windows only)  
+#   move, moved (macOS and Windows only)
+#   enterFullScreen, leaveFullScreen  
   
 def win_on_event (e):
     print (f"win_event: {e.data}")
