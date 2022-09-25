@@ -271,6 +271,7 @@ page.on_resize = page_on_resize
 
 # window event listener
 #   close, focus, blur,
+#   maximize, unmaximize, minimize,  
 def win_on_event (e):
     print (f"win_event: {e.data}")
     page.add (Text (e.data))
