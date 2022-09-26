@@ -221,14 +221,15 @@ row = Row ([Text ("Im at left", expand=True), Text ("Im at right")], expand=True
 
 *Absolute position*
 
-[see: Absolute positioning inside Stack](https://flet.dev/docs/controls/stack#absolute-positioning-inside-stack)
+see:[Absolute positioning inside Stack](https://flet.dev/docs/controls/stack#absolute-positioning-inside-stack)
 
 <a id="colors">
 
 **Colors**
 
-[Flet colors.py source code](https://github.com/flet-dev/flet/blob/main/sdk/python/flet/colors.py)
-[Material color palette shades](https://api.flutter.dev/flutter/material/Colors-class.html)
+see:[Flet colors.py source code](https://github.com/flet-dev/flet/blob/main/sdk/python/flet/colors.py)
+
+see:[Material color palette shades](https://api.flutter.dev/flutter/material/Colors-class.html)
 
 **User Control**
 
