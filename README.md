@@ -52,7 +52,7 @@ flet.app(target=main, assets_dir="assets")
 # flet.app(target=main, assets_dir="assets", host=0.0.0.0, port=777)
 
 ```
-<a id="boilerplate"></a>
+<a id="boilerplate-with-appbar"></a>
 **Quick Boilerplate with AppBar and Button for theme change**
 
 ```python
@@ -230,7 +230,7 @@ page.go (route)
 # set clipboard
 page.set_clipboard ("This paste comes from flet!")
 
-# get the clipboard's value
+# get the clipboard's content
 page.get_clipboard()
 
 # runtime environment
