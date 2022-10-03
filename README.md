@@ -45,7 +45,54 @@ from flet import icons, dropdown, colors, padding, alignment, border_radius, the
 def main(page: Page):
   page.title = "My Awesome Flet Appname"
   page.add (Text ("Hello Fletizen!"))
-  page.update()
+
+flet.app(target=main, assets_dir="assets")
+# flet.app(target=main, view=flet.WEB_BROWSER)
+# option to provide host/port 
+# flet.app(target=main, assets_dir="assets", host=0.0.0.0, port=777)
+
+```
+<a id="boilerplate"></a>
+**Quick Boilerplate with AppBar and Button for theme change**
+
+```python
+# Essential imports
+
+import flet
+import time
+from flet import Page, IconButton, ButtonStyle, AppBar, ProgressBar, Column, Row, Container, Text, Stack, TextField, Image, ElevatedButton 
+from flet import icons, dropdown, colors, padding, alignment, border_radius, theme
+
+def main(page: Page):
+    page.title = "QuickStart with App Bar"
+    page.theme_mode = "light"   # by default, page.theme_mode=None
+    page.splash = ProgressBar(visible=False)
+
+    def change_theme(e) -> None:
+        """
+        Changes the app's theme_mode, from dark to light or light to dark. A splash(progress bar) is also shown.
+
+        :param e: The event that triggered the function
+        :type e: ControlEvent
+        """
+        page.splash.visible = True
+        page.update()
+        page.theme_mode = "light" if page.theme_mode == "dark" else "dark"  # changes the page's theme_mode
+        page.splash.visible = False
+        theme_icon_button.selected = not theme_icon_button.selected  # changes the icon
+        time.sleep(1)  # shows the progress bar for a second indicating that work is being done..
+        page.update()
+
+    theme_icon_button = IconButton(icons.DARK_MODE, selected=False, selected_icon=icons.LIGHT_MODE,
+                                   icon_size=35, tooltip="change theme", on_click=change_theme,
+                                   style=ButtonStyle(color={"": colors.BLACK, "selected": colors.WHITE}, ), )
+
+    page.appbar = AppBar(title=Text("Custom Title here", color="white"),
+                         center_title=True, bgcolor="blue", actions=[theme_icon_button], )
+
+    page.add(
+        Text("If we have the Technology, then it's doable!", weight="bold")
+    )
 
 flet.app(target=main, assets_dir="assets")
 # flet.app(target=main, view=flet.WEB_BROWSER)
@@ -182,6 +229,9 @@ page.go (route)
 
 # set clipboard
 page.set_clipboard ("This paste comes from flet!")
+
+# get the clipboard's value
+page.get_clipboard()
 
 # runtime environment
 page.web # True/False if running in web browser
