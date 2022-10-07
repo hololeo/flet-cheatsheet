@@ -50,7 +50,7 @@ def main(page: Page):
 flet.app(target=main, assets_dir="assets")
 # flet.app(target=main, view=flet.WEB_BROWSER)
 # option to provide host/port 
-# flet.app(target=main, assets_dir="assets", host=0.0.0.0, port=777)
+# flet.app(target=main, assets_dir="assets", host="0.0.0.0", port=777)
 
 ```
 
