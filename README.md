@@ -7,7 +7,7 @@ If you find this cheatsheet useful, you can support it for free by clicking ⭐ 
 | ------------- | ------------- |
 | [Getting started guide](https://flet.dev/docs/guides/python/getting-started)  | [Controls Reference](https://flet.dev/docs/controls)  |
 | [Flet Github Repo](https://github.com/flet-dev/flet) | [Flet issues](https://github.com/flet-dev/flet/issues) |
-| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | |
+| [Flet Examples Repo](https://github.com/flet-dev/examples/tree/main/python) | | [Flet Utils](https://flutils.fly.dev/#/)
 
 <a id="install"></a>
 <a id="upgrade"></a>
