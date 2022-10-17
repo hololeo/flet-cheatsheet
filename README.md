@@ -300,7 +300,8 @@ page.on_window_event = win_on_event
 
 ```python
 # title
-page.window_title = "Flet Rocks!" # set app window title (desktop and web)
+page.title = "Flet Rocks!" # set app window title (desktop and web)  
+
 
 # show window
 page.window_opacity = 1.0
